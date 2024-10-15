@@ -1,0 +1,38 @@
+project-root/
+│
+├── dist/
+│   └── index.html
+├── src/
+│   └── input.css
+├── tailwind.config.js
+
+
+
+
+1) npx tailwindcss init
+
+2) create file in src folder name it as "input.css" 
+   and write below 3 line code
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+3) correction in content in tailwincss.config.js
+
+module.exports = {
+ //  content: [".dist/index.html"],
+  content: ["./dist/*.html"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+4) npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch
+
+
+5) npm install tailwindcss@latest
+
+--------------------------------------------------------
