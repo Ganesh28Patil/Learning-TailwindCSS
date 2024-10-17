@@ -36,3 +36,8 @@ module.exports = {
 5) npm install tailwindcss@latest
 
 --------------------------------------------------------
+Custom padding : 
+p-[4px]    this will apply padding on both axis
+px-[14px]  for giving padding along x axis 
+
+
